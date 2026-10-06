@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Potencial Humano | Quiz</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Potencial Humano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,6 +20,7 @@
         <h1>POTENCIAL HUMANO Y CARACTERÍSTICAS SOCIODEMOGRÁFICAS DEL PERÚ</h1>
         <p class="subtitle">Desarrollada por el estudiante Wilson Andre Romucho Hernandez</p>
         <button id="start-btn" class="primary-btn">Empezar</button>
+
         <div class="animated-circles">
           <div class="circle circle-1"></div>
           <div class="circle circle-2"></div>
@@ -32,16 +33,14 @@
       <div class="stars"></div>
       <div class="card quiz-card">
         <div class="topbar">
-          <span id="progress-text">Pregunta 1 / 4</span>
+          <span id="progress-text">Pregunta 1 / 10</span>
           <div class="progress">
             <div id="progress-bar"></div>
           </div>
         </div>
 
         <h2 id="question-text"></h2>
-
         <div id="answers" class="answers"></div>
-
         <div id="feedback" class="feedback"></div>
       </div>
     </div>
@@ -50,7 +49,7 @@
       <div class="stars"></div>
       <div class="card result-card">
         <h2>Resultado final</h2>
-        <div id="final-score" class="final-score">0 / 4</div>
+        <div id="final-score" class="final-score">0 / 10</div>
         <p id="result-message"></p>
         <button id="restart-btn" class="primary-btn">Reintentar</button>
       </div>
@@ -58,10 +57,11 @@
   </div>
 
   <audio id="sound-good" preload="auto">
-    <source src="sound_god.mp3" type="audio/mpeg">
+    <source src="sound_god.mp3" type="audio/mpeg" />
   </audio>
+
   <audio id="sound-bad" preload="auto">
-    <source src="sound_bad.mp3" type="audio/mpeg">
+    <source src="sound_bad.mp3" type="audio/mpeg" />
   </audio>
 
   <script src="script.js"></script>
